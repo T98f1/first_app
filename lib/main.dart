@@ -9,9 +9,125 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-      body: SafeArea(
-          child: Container(
+      home: Scaffold(
+          body: SafeArea(
+              child: Column(
+        children: [
+          Expanded(
+            child: Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    color: Colors.red,
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    color: Colors.blue,
+                  ),
+                )
+              ],
+            ),
+          ),
+          Expanded(
+              child: Row(
+            children: [
+              Expanded(
+                  flex: 2,
+                  child: Container(
+                    color: Colors.blue,
+                  )),
+              Expanded(
+                  flex: 6,
+                  child: Container(
+                    color: Colors.red,
+                  )),
+              Expanded(
+                  flex: 2,
+                  child: Container(
+                    color: Colors.blue,
+                  )),
+            ],
+          )),
+          Expanded(
+              child: Row(
+            children: [
+              Expanded(
+                flex: 3,
+                child: Container(
+                  color: Colors.red,
+                ),
+              ),
+              Expanded(flex: 4, child: Container()),
+              Expanded(
+                  flex: 3,
+                  child: Container(
+                    color: Colors.blue,
+                  ))
+            ],
+          )),
+          Expanded(
+              child: Row(
+            children: [
+              Expanded(flex: 2, child: Spacer()),
+              Expanded(
+                flex: 5,
+                child: Container(
+                  color: Colors.green,
+                ),
+              ),
+              Expanded(flex: 2, child: Spacer()),
+            ],
+          )),
+          Expanded(
+              child: Row(
+            children: [
+              Expanded(
+                  flex: 5,
+                  child: Container(
+                    color: Colors.yellow,
+                  )),
+              Expanded(flex: 5, child: SizedBox())
+            ],
+          )),
+          Expanded(
+              child: Row(
+            children: [
+              Expanded(
+                  flex: 3,
+                  child: Container(
+                    color: Colors.red,
+                  )),
+              Expanded(
+                  flex: 4,
+                  child: Column(
+                    children: [
+
+                      Expanded(
+                          child:
+
+                          Container(
+                            color: Colors.blue,
+                          ),
+
+
+                      ),
+                      Expanded(child: Container(
+                        color: Colors.green,
+                      ))
+                    ],
+                  )),
+              Expanded(
+                  flex: 3,
+                  child: Container(
+                    color: Colors.black,
+                  ))
+            ],
+          ))
+        ],
+      ))),
+
+      /*Container(
         //width: double.infinity,
         //color: Colors.amber,
         /*
@@ -184,8 +300,9 @@ class MyApp extends StatelessWidget {
           ],
         ),
             */
-        child: Container(
-          width:333,
+        child:
+        Container(
+          width: 333,
           height: 333,
           decoration: BoxDecoration(
               color: Colors.blue,
@@ -211,8 +328,8 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-      )),
-    ));
+      ) */
+    );
   }
 }
 // Column(
