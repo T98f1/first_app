@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +13,70 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           body: SafeArea(
-              child: Column(
+              child:Column(
+                children: [
+                  Stack(
+                    alignment: Alignment.bottomRight,
+                    children: [
+                     Image.asset("aseets/images/123.png"),
+                      Column(crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("midcine 1",style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 12,
+
+
+                          ),
+                          ),
+                          Text("dececrbtin",style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 10,
+
+
+                          ),
+                          ),
+                        ],
+                      ),
+
+
+
+
+                    ],
+                  ),
+                  Stack(
+                    alignment: Alignment.bottomRight,
+                    children: [
+                      Image.network("https://saurd.com/wp-content/uploads/2021/02/telecharge-32.jpg"),
+                      Column(
+                        children: [
+                          Text("midcine 1",style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 14,
+
+
+                          ),
+                          ),
+                          Text("dececrbtin",style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 10,
+
+
+                          ),
+                          ),
+                        ],
+                      ),
+
+
+
+
+                    ],
+                  ),
+                ],
+              )
+
+
+
+            /*Column(
         children: [
           Expanded(
             child: Row(
@@ -102,17 +167,13 @@ class MyApp extends StatelessWidget {
                   flex: 4,
                   child: Column(
                     children: [
-
                       Expanded(
-                          child:
-
-                          Container(
-                            color: Colors.blue,
-                          ),
-
-
+                        child: Container(
+                          color: Colors.blue,
+                        ),
                       ),
-                      Expanded(child: Container(
+                      Expanded(
+                          child: Container(
                         color: Colors.green,
                       ))
                     ],
@@ -125,7 +186,9 @@ class MyApp extends StatelessWidget {
             ],
           ))
         ],
-      ))),
+      )*/
+          )
+      ),
 
       /*Container(
         //width: double.infinity,
