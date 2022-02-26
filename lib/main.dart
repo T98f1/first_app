@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +11,84 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           body: SafeArea(
-              child:Column(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Container(
+            margin: EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(20)),
+            ),
+            child: ClipRRect(
+                borderRadius: BorderRadius.all(Radius.circular(20)),
+                child: Image.network(
+                    "https://i1.hespress.com/wp-content/uploads/2017/03/Temple_of_Heaven_613651700.jpg")),
+          ),
+          Text(
+            'Festival Chinatown',
+            textAlign: TextAlign.start,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20.0,
+            ),
+          ),
+          Container(
+            height: 2,
+            width: double.infinity,
+            margin: EdgeInsets.all(20),
+            color: Colors.grey[400],
+          ),
+          Row(
+            //mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                flex: 2,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text ("Name",
+                        textAlign: TextAlign.start,
+                        style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontSize: 16,
+                            color: Colors.grey
+
+                    )
+                    ),
+                    Text("",
+                    )
+                  ],
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: SizedBox(
+                  width: 22,
+                ),
+              ),
+              Expanded(
+                flex: 2,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text ("Date",
+                        style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontSize: 16,
+                          color: Colors.grey
+
+                        )
+                    ),
+                  ],
+                ),
+              )
+            ],
+          )
+        ],
+      )
+
+              /*Column(
                 children: [
                   Stack(
                     alignment: Alignment.bottomRight,
@@ -72,11 +147,9 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                 ],
-              )
+              )*/
 
-
-
-            /*Column(
+              /*Column(
         children: [
           Expanded(
             child: Row(
@@ -187,8 +260,7 @@ class MyApp extends StatelessWidget {
           ))
         ],
       )*/
-          )
-      ),
+              )),
 
       /*Container(
         //width: double.infinity,
