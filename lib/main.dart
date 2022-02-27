@@ -12,7 +12,298 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           body: SafeArea(
+              child: Stack(
+        children: [
+          Image.asset("aseets/images/5.jfif"),
+          Padding(
+            padding: const EdgeInsets.only(top: 300),
+            child: Container(
+              height: 800,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(40),
+                      topLeft: Radius.circular(40)),
+                  color: Colors.blueGrey[300]),
               child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20),
+                    child: Divider(
+                      height: 5,
+                      thickness: 3,
+                      endIndent: 150,
+                      indent: 150,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          width: 80,
+                          height: 80,
+                          margin: const EdgeInsets.only(left: 30),
+                          decoration: const BoxDecoration(
+                              color: Colors.white, shape: BoxShape.circle),
+                          child: const Center(
+                              child: Text(
+                            '\$65 ',
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                overflow: TextOverflow.ellipsis,
+                                fontSize: 20),
+                          )),
+                        ),
+                      ),
+                      Expanded(
+                        child: Column( crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 20),
+                              child: Text("PP-0008",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  overflow: TextOverflow.ellipsis,
+                                  fontSize: 20
+                              ) ,),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 20),
+                              child: Text("Free Shipping",
+                                style: TextStyle(
+                                    color: Colors.grey[100],
+                                    fontWeight: FontWeight.normal,
+                                    overflow: TextOverflow.ellipsis,
+                                    fontSize: 16
+                                ) ,),
+                            )
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Icon(
+                          Icons.favorite,
+                        size: 50,),
+                      )
+                    ],
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: SizedBox(
+                        height: 500,
+                        width: double.infinity,
+                        child: Text("hjjhvzjkjvnkkb hhfznhnlk   hnnskhjnsdk  hjghaljbgkbglknjg.g jjhvgfkkskgb  jjhoshsjhjzfjzoe      ijijie;osjln,jbgoioj    jljjsoijlsihg",
+                            textAlign: TextAlign.start,
+                            maxLines: 3,
+                            style: TextStyle(
+                                color: Colors.grey[800],
+                                fontWeight: FontWeight.normal,
+                                //overflow: TextOverflow.ellipsis,
+                                fontSize: 16
+                            )
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child:
+                    Row(
+                      children: [
+                        Container(
+                          width: 60,
+                          height: 60,
+                          margin: const EdgeInsets.all(10),
+                          decoration: const BoxDecoration(
+                              color: Colors.white, shape: BoxShape.circle),
+                          child: const Center(
+                              child: Text(
+                                'XS',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    overflow: TextOverflow.ellipsis,
+                                    fontSize: 16),
+                              )),
+
+
+                  ),
+                        Container(
+                          width: 60,
+                          height: 60,
+                          margin: const EdgeInsets.all( 10),
+                          decoration: const BoxDecoration(
+                              color: Colors.white, shape: BoxShape.circle),
+                          child: const Center(
+                              child: Text(
+                                'XR',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    overflow: TextOverflow.ellipsis,
+                                    fontSize: 16),
+                              )),
+
+
+                  ),
+                        Container(
+                          width: 60,
+                          height: 60,
+                          margin: const EdgeInsets.all(10),
+                          decoration: const BoxDecoration(
+                              color: Colors.white, shape: BoxShape.circle),
+                          child: const Center(
+                              child: Text(
+                                '11',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    overflow: TextOverflow.ellipsis,
+                                    fontSize: 16),
+                              )),
+
+
+                        ),
+                        Container(
+                          width: 60,
+                          height: 60,
+                          margin: const EdgeInsets.all(10),
+                          decoration: const BoxDecoration(
+                              color: Colors.white, shape: BoxShape.circle),
+                          child: const Center(
+                              child: Text(
+                                'SE',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    overflow: TextOverflow.ellipsis,
+                                    fontSize: 16),
+                              )),
+
+
+                        ),
+                        Container(
+                          width: 60,
+                          height: 60,
+                          margin: const EdgeInsets.all(10),
+                          decoration: const BoxDecoration(
+                              color: Colors.white, shape: BoxShape.circle),
+                          child: const Center(
+                              child: Text(
+                                '12',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    overflow: TextOverflow.ellipsis,
+                                    fontSize: 16),
+                              )),
+
+
+                        ),
+                        Container(
+                          width: 60,
+                          height: 60,
+                          margin: const EdgeInsets.all(10),
+                          decoration: const BoxDecoration(
+                              color: Colors.white, shape: BoxShape.circle),
+                          child: const Center(
+                              child: Text(
+                                '15',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    overflow: TextOverflow.ellipsis,
+                                    fontSize: 16),
+                              )),
+
+
+                        ),
+
+                      ],
+                    )
+                  )
+                  ),
+                Expanded(
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 50,
+                        height: 50,
+                        margin: const EdgeInsets.all(10),
+                        decoration: const BoxDecoration(
+                            color: Colors.white, shape: BoxShape.circle),
+                        child: const Center(
+                            child: Text(
+                              '--',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  overflow: TextOverflow.ellipsis,
+                                  fontSize:30),
+                            )),
+
+
+                      ),
+                      Text("02",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            //overflow: TextOverflow.ellipsis,
+                            fontSize:30),
+                      ),
+                      Container(
+                        width: 50,
+                        height: 50,
+                        margin: const EdgeInsets.all(10),
+                        decoration: const BoxDecoration(
+                            color: Colors.white, shape: BoxShape.circle),
+                        child: const Center(
+                            child: Text(
+                              '+',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  overflow: TextOverflow.ellipsis,
+                                  fontSize:30),
+                            )),
+
+
+
+                      ),
+                      Expanded(child: Container(
+                        width: 25,
+                        height: 60,
+                        decoration: const BoxDecoration(
+                            color: Colors.blueGrey,
+                            borderRadius: BorderRadius.all(Radius.circular(40))),
+                        margin: const EdgeInsets.all(10),
+
+                        child: Center(
+                          child: Text("Add to cart",
+                            style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            overflow: TextOverflow.ellipsis,
+                            fontSize:30),
+                          ),
+                        ),
+                      ),),
+                    ],
+                  ),
+                )
+                ],
+
+              ),
+            ),
+          )
+        ],
+      )
+
+              /*Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
@@ -143,7 +434,7 @@ class MyApp extends StatelessWidget {
             child: Image.asset("aseets/images/barcode.png"),
           )),
         ],
-      )
+      )*/
 
               /*Column(
                 children: [
